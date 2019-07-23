@@ -1,3 +1,36 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// the size of wil stay the same no matter what
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.article {
+  padding: 20px;
+  &:nth-child(2n) {
+    background: #eee;
+  }
+
+}
+
+.container {
+  border: 1px solid grey;
+  max-width: 960px;
+  padding: 30px;
+  // left and right margin automatic
+  margin: 0 auto;
+}
+
+h2 {
+
+  font-size: 24px;
+  // margin: top left/right bottom
+  margin: 0 0 10px;
+}
+
