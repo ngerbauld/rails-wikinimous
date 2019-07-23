@@ -1,0 +1,9 @@
+<%= form_for(@article) do |f| %>
+<!-- if we want to change de name we do it this way: -->
+<div><%= f.label :title, "Title"%>
+  <%= f.text_field :title %></div>
+<!-- if not, we dont need to add anything, just like this: -->
+<div><%= f.label :content %>
+  <%= f.text_field :content %></div>
+<%= f.submit %>
+<% end %>
